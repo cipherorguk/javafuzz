@@ -28,24 +28,24 @@ OPTIONS
           "/home/test/" and so on ..
 
      -e   You can set the type you want to overflow with the MAX_VALUE on top
-	      for example if you want to pass twice the size of a double to a class 
-	      which is defined to accept only double you do "-e double"
-	      Warning: If you do that with an integer it will overflow  and 
-	      become -2.
-	      Values can be : int, double, float, long, short. 
+          for example if you want to pass twice the size of a double to a class 
+	  which is defined to accept only double you do "-e double"
+	  Warning: If you do that with an integer it will overflow  and 
+	  become -2.
+	  Values can be : int, double, float, long, short. 
 
-	 -r   Number of recursions until constructs the class [Default 20]
-		  If needs more it will set type to null and consider it Infinite.
-		  Usually when trying to construct types that dont get any arguments 
-		  it will be fine, if it  will try to construct classes that their
-		  types accept arguments and so on... JavaFuzz will keep constructing 
-		  types until it gets the asked types. 
+     -r   Number of recursions until constructs the class [Default 20]
+	  If needs more it will set type to null and consider it Infinite.
+	  Usually when trying to construct types that dont get any arguments 
+	  it will be fine, if it  will try to construct classes that their
+	  types accept arguments and so on... JavaFuzz will keep constructing 
+	  types until it gets the asked types. 
 	 	 
-	 -a   Set size of used array when fuzzing  [Default 100000]
-	      This option can be maximum Integer.MAX_VALUE
+     -a   Set size of used array when fuzzing  [Default 100000]
+          This option can be maximum Integer.MAX_VALUE
      
-	 -l   Set length of used Strings when fuzzing [Default 1024]
-	      This option can be maximum Integer.MAX_VALUE
+     -l   Set length of used Strings when fuzzing [Default 1024]
+          This option can be maximum Integer.MAX_VALUE
 
 EXAMPLES
 
