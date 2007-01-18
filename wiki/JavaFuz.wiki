@@ -1,0 +1,61 @@
+#summary One-sentence summary of this page.
+
+{{{NAME
+     JavaFuzz - Java Class Fuzzer 
+
+SYNOPSIS
+     JavaFuzz.jar [-v] -c class [-e type] [-l StringLength]...
+
+DESCRIPTION
+     JavaFuzz is a java classes fuzzer based on the the Java Reflection
+     API. The reflection API represents, or reflects, the classes, interfaces, 
+     and objects in the current Java Virtual Machine. Using the reflection 
+     API JavaFuzz can contruct and invoke any given class (or list of classes).
+     After getting the types that a class accepts will construct the classes using
+     large values. 
+     
+
+OPTIONS
+     -v   Verbose - Fully Print Exceptions. Very usuafull and you better use 
+     	  that if you want to spot any weird exceptions.
+
+     -c   Classname
+          Input is Class name e.g java.net.URL , you cannot use -f at the same 
+          time. 
+
+     -f   Read Class names from a file. Classnames should be on in each line.
+
+     -s   You can set the start of the fuzzing String, for example "http://" or 
+          "/home/test/" and so on ..
+
+     -e   You can set the type you want to overflow with the MAX_VALUE on top
+	      for example if you want to pass twice the size of a double to a class 
+	      which is defined to accept only double you do "-e double"
+	      Warning: If you do that with an integer it will overflow  and 
+	      become -2.
+	      Values can be : int, double, float, long, short. 
+
+	 -r   Number of recursions until constructs the class [Default 20]
+		  If needs more it will set type to null and consider it Infinite.
+		  Usually when trying to construct types that dont get any arguments 
+		  it will be fine, if it  will try to construct classes that their
+		  types accept arguments and so on... JavaFuzz will keep constructing 
+		  types until it gets the asked types. 
+	 	 
+	 -a   Set size of used array when fuzzing  [Default 100000]
+	      This option can be maximum Integer.MAX_VALUE
+     
+	 -l   Set length of used Strings when fuzzing [Default 1024]
+	      This option can be maximum Integer.MAX_VALUE
+	         
+
+BUGS
+     It cannot construct classes with types : 
+     a) Array of an array of something 
+     b) Array that is not int,double,float,short,long,string
+
+AUTHOR
+     Emmanouel Kellinis <me at cipher dot org dot uk>
+
+
+}}}
