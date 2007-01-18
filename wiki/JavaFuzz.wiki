@@ -46,7 +46,12 @@ OPTIONS
      
 	 -l   Set length of used Strings when fuzzing [Default 1024]
 	      This option can be maximum Integer.MAX_VALUE
-	         
+
+EXAMPLES
+
+	 java -jar JavaFuzz.jar -c java.lang.String -v
+	 java -jar JavaFuzz.jar -f classes.txt -v -e int
+	 java -jar JavaFuzz.jar -c java.net.URL -e int -s http://	         
 
 BUGS
      It cannot construct classes with types : 
