@@ -54,9 +54,9 @@ EXAMPLES
 	 java -jar JavaFuzz.jar -c java.net.URL -e int -s http://	         
 
 BUGS
-     It cannot construct classes with types : 
-     a) Array of an array of something 
-     b) Array that is not int,double,float,short,long,string
+         It cannot construct classes with types : 
+         a) Array of an array of something 
+         b) Array that is not int,double,float,short,long,string
 
 AUTHOR
      Emmanouel Kellinis <me at cipher dot org dot uk>
