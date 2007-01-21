@@ -55,7 +55,7 @@ EXAMPLES
 
 BUGS
          It cannot construct classes with types : 
-         a) Multidimensional arrays that is not int,double,float,short,long,string
+         a) Multidimensional array that is not int,double,float,short,long,string
          b) Array that is not int,double,float,short,long,string
 
 AUTHOR
