@@ -41,7 +41,7 @@ OPTIONS
 	  types accept arguments and so on... JavaFuzz will keep constructing 
 	  types until it gets the asked types. 
 	 	 
-     -a   Set size of used array when fuzzing  [Default 100000]
+     -a   Set size of used array when fuzzing  [Default 800]
           This option can be maximum Integer.MAX_VALUE
      
      -l   Set length of used Strings when fuzzing [Default 1024]
@@ -55,7 +55,7 @@ EXAMPLES
 
 BUGS
          It cannot construct classes with types : 
-         a) Array of an array of something 
+         a) Multidimensional arrays that is not int,double,float,short,long,string
          b) Array that is not int,double,float,short,long,string
 
 AUTHOR
