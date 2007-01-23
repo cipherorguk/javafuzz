@@ -18,6 +18,8 @@ OPTIONS
      -v   Verbose - Fully Print Exceptions. Very usuafull and you better use 
      	  that if you want to spot any weird exceptions.
 
+     -m   Fuzz methods of a Class, Can take Long time to finish
+
      -c   Classname
           Input is Class name e.g java.net.URL , you cannot use -f at the same 
           time. 
