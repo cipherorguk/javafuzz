@@ -42,6 +42,9 @@ OPTIONS
 	  it will be fine, if it  will try to construct classes that their
 	  types accept arguments and so on... JavaFuzz will keep constructing 
 	  types until it gets the asked types. 
+
+     -k   Set the value for int,float,long,short,double
+          e.g. -k int=100  or -k double=20000 and so on  
 	 	 
      -a   Set size of used array when fuzzing  [Default 800]
           This option can be maximum Integer.MAX_VALUE
