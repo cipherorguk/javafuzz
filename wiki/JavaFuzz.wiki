@@ -63,9 +63,14 @@ EXAMPLES
 	 java -jar JavaFuzz.jar -c java.net.URL -e int -s http://www.example.com	         
 
 BUGS
+         Version <= 0.3 
          It cannot construct classes with types : 
          a) Multidimensional array that is not int,double,float,short,long,string
          b) Array that is not int,double,float,short,long,string
+         
+FIXES         
+         Version >= 0.4 
+         The bugs listed above are partially fixed. 
 
 AUTHOR
      Emmanouel Kellinis <me at cipher dot org dot uk>
