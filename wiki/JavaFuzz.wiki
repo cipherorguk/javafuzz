@@ -52,6 +52,10 @@ OPTIONS
      -l   Set length of used Strings when fuzzing [Default 1024]
           This option can be maximum Integer.MAX_VALUE
 
+     -o   Find if a specific class requires a cosntant and brute-force 
+          all possible possitions until the constant is in the correct 
+          positiont. [This option will add further delays]
+
 EXAMPLES
 
 	 java -jar JavaFuzz.jar -c java.lang.String -v
