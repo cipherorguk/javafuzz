@@ -56,6 +56,9 @@ OPTIONS
           all possible possitions until the constant is in the correct 
           positiont. [This option will add further delays]
 
+     -u   Fuzz only high or low values respectively e.g. Integer high is +MAX_VALUE
+          and low value is -MAX_VALUE (or MIN_VALUE) [-u low or -u high]
+
 EXAMPLES
 
 	 java -jar JavaFuzz.jar -c java.lang.String -v
