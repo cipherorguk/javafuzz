@@ -72,8 +72,8 @@ BUGS
          b) Array that is not int,double,float,short,long,string
          
 FIXES         
-         Version >= 0.4 
-         The bugs listed above are partially fixed. 
+         Version >= 0.5 
+         The bugs listed above are fixed. If you find the same problem let me know 
 
 AUTHOR
      Emmanouel Kellinis <me at cipher dot org dot uk>
