@@ -47,6 +47,21 @@ public Main() {
 } 
 }}}
 
+Another similar one is with  java.awt.image.BufferedImage( int int int )
+
+
+{{{
+for width x height = 46341 46341
+
+Java will throw :
+Exception: java.lang.NegativeArraySizeException
+}}}
+
+JavaFuzz options for the above are :
+java -Xmx500M -jar JavaFuzz.jar -c java.awt.image.BufferedImage -o -a 10 -k int=46341 -v 
+
+
+
 
 
 
