@@ -44,7 +44,7 @@ OPTIONS
 	  types until it gets the asked types. 
 
      -k   Set the value for int,float,long,short,double
-          e.g. -k int=100  or -k double=20000 and so on  
+          e.g. -k int=100  or -k double=20000 or -k int=19,float=49 and so on.
 	 	 
      -a   Set size of used array when fuzzing  [Default 800]
           This option can be maximum Integer.MAX_VALUE
@@ -55,6 +55,14 @@ OPTIONS
      -o   Find if a specific class requires a cosntant and brute-force 
           all possible possitions until the constant is in the correct 
           positiont. [This option will add further delays]
+
+     -i   JavaFuzz will ignore the specified method(s) helpful when you found a bug 
+          in a method but you want to dig deeper. (Seperate methods with commas)
+          e.g. for java.awt.Image you could use -i getGraphics,getScaledInstance  
+    
+     -n   JavaFuzz will fuzz the specified method(s) only
+          e.g. for java.awt.Font you could use -n applySize,pDispose  
+          NOTE: You cannot use -i at the same time
 
      -u   Fuzz only high or low values respectively e.g. Integer high is +MAX_VALUE
           and low value is -MAX_VALUE (or MIN_VALUE) [-u low or -u high]
@@ -71,9 +79,13 @@ BUGS
          a) Multidimensional array that is not int,double,float,short,long,string
          b) Array that is not int,double,float,short,long,string
          
-FIXES         
+FIXES/UPDATES       
+         Version >= 0.6
+         You can filter in and out method(s) and you can supply multiple types with -k
+         Minor error error handling fixes
+  
          Version >= 0.5 
-         The bugs listed above are fixed. If you find the same problem let me know 
+         The bugs listed in <=0.3 are fixed. If you find the same problem let me know 
 
 AUTHOR
      Emmanouel Kellinis <me at cipher dot org dot uk>
