@@ -67,6 +67,10 @@ OPTIONS
      -u   Fuzz only high or low values respectively e.g. Integer high is +MAX_VALUE
           and low value is -MAX_VALUE (or MIN_VALUE) [-u low or -u high]
 
+    - p   Enforce a Constant and bruteforce the position.  Thetype can 
+          be int,double,float,short,string   e.g. -p double=1 
+
+
 EXAMPLES
 
 	 java -jar JavaFuzz.jar -c java.lang.String -v
@@ -79,7 +83,11 @@ BUGS
          a) Multidimensional array that is not int,double,float,short,long,string
          b) Array that is not int,double,float,short,long,string
          
-FIXES/UPDATES       
+FIXES/UPDATES   
+         Version >= 0.7
+         Enforce a Constant and bruteforce the position.  The type can be int,double,float,short,string   
+         flag is -p 
+    
          Version >= 0.6
          You can filter in and out method(s) and you can supply multiple types with -k
          Minor error handling fixes
