@@ -70,6 +70,10 @@ OPTIONS
     - p   Enforce a Constant and bruteforce the position.  Thetype can 
           be int,double,float,short,string   e.g. -p double=1 
 
+     -g   Use it when you want to replace a constructor, for example it could be used to replace
+          abstract classes or interfaces -g org.replace.this=org.with.this
+
+
 
 EXAMPLES
 
