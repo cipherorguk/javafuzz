@@ -22,7 +22,7 @@ integer, by doing that we do not leave any space for the number to grow more dur
 construction, and therefore if during the process there is any "mis-calculation" we get an Integer 
 overflow.
 
-This specific bug is not further exploitable, but you get the idea.
+This specific bug is not exploitable, but you get the idea.
 Valid in 1.5.0_10-b03 and prior, now it is fixed
 http://bugs.sun.com/bugdatabase/view_bug.do?bug_id=5050278
 
@@ -59,8 +59,6 @@ Exception: java.lang.NegativeArraySizeException
 
 JavaFuzz options for the above are :
 java -Xmx500M -jar JavaFuzz.jar -c java.awt.image.BufferedImage -o -a 10 -k int=46341 -v 
-
-
 
 
 
