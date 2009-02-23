@@ -2,7 +2,9 @@
 FIXES/UPDATES       
       
 Version >= 0.7
-Replace a constructor, the flag is -g 
+Replace a constructor, the flag is -g (with automation)
+Speed Improvements
+
 
 Enforce a Constant and bruteforce the position.  The type can be int,double,float,short,string   
 flag is -p 
