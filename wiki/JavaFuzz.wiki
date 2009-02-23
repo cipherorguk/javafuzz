@@ -26,8 +26,8 @@ OPTIONS
 
      -f   Read Class names from a file. Classnames should be on in each line.
 
-     -s   You can set the fuzzing String, for example "http://www.example.com" or 
-          "/home/test/" and so on ..
+     -s   You can set the fuzzing String, for example http://www.example.com
+          if you dont want repeats, use it with -l1 
 
      -e   You can set the type you want to overflow with the MAX_VALUE on top
           for example if you want to pass twice the size of a double to a class 
@@ -70,8 +70,10 @@ OPTIONS
     - p   Enforce a Constant and bruteforce the position.  Thetype can 
           be int,double,float,short,string   e.g. -p double=1 
 
-     -g   Use it when you want to replace a constructor, for example it could be used to replace
+     -g   Use it when you want to replace a class, for example it could be used to replace
           abstract classes or interfaces -g org.replace.this=org.with.this
+          the auto replacement mode can be invoked using -g org.replace.this={A}
+          and for complete automation use -ga 
 
 
 
