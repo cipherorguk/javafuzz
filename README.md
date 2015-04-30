@@ -5,3 +5,5 @@ JavaFuzz is a java classes fuzzer based on the the Java Reflection API. The refl
 Note : Check the subversion repository for the latest version, Downloads get the latest packaged version, not the latest available version. For example the latest code base has a fix for the variable position brute forcing option.
 
 Latest version : 0.7.5
+
+Download: https://github.com/cipherorguk/javafuzz/releases/tag/0.7.5 
